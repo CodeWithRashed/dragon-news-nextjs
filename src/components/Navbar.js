@@ -9,11 +9,11 @@ const Navbar = () => {
     <div className="w-full mx-auto text-center py-8 space-y-3">
 
     <div>
-      <h1>
+      <h1 className="text-3xl">
         The Dragon News
       </h1>
-      <p className="text-xs text-gray-500">Journalism without Fear or Favour</p>
-      <p className="text-xs text-gray-500"><span className="font-medium">Sunday</span>, November 27, 2023</p>
+      <p className="text-base text-gray-500">Journalism without Fear or Favour</p>
+      <p className="text-base text-gray-500"><span className="font-medium">Sunday</span>, November 27, 2023</p>
     </div>
 
     <div className="bg-[#151515] py-2">
@@ -21,12 +21,12 @@ const Navbar = () => {
             <div className="logo">
             <Image 
             src={DragonLogo}
-            width={80}
-            height={30}
+            width={180}
+            height={80}
             alt="Dragon News Logo"
             />
             </div>
-            <div className="menu flex gap-3 items-center text-white text-xs">
+            <div className="menu flex gap-3 items-center text-white text-base">
             <Link href="/">
             Home
             </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
             Contact
             </Link>
             </div>
-            <div className="social-icons text-white flex justify-center items-center gap-3">
+            <div className="social-icons text-lg text-white flex justify-center items-center gap-3">
             <FaLinkedin/>
             <FaSquareXTwitter />
             <FaFacebookSquare />
